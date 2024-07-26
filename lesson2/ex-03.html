@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo table cơ bản: Bài 3</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #d3d3d3;
+        }
+
+        .header {
+            background-color: #f2f2f2;
+        }
+
+        .subheader {
+            background-color: #d3d3d3;
+        }
+
+        .time-cell {
+            background-color: #d3d3d3;
+        }
+
+        .course-cell {
+            background-color: #d3d3d3;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th rowspan="2">Buổi</th>
+            <th colspan="2" class="subheader">Lịch học</th>
+            <th rowspan="2">Môn học</th>
+        </tr>
+        <tr>
+            <th class="subheader">Bắt đầu</th>
+            <th class="subheader">Kết thúc</th>
+        </tr>
+        <tr>
+            <td class="time-cell">Thứ 1</td>
+            <td>8:00 AM</td>
+            <td>12:00 AM</td>
+            <td class="course-cell">Cơ sở dữ liệu</td>
+        </tr>
+        </tr>
+        <tr>
+            <td class="time-cell"> Thứ 2</td>
+            <td>8:00 AM</td>
+            <td>12:00 AM</td>
+            <td class="course-cell">Nhập môn C</td>
+        </tr>
+        <tr>
+            <td class="time-cell">Thứ 3</td>
+            <td>2:00 PM</td>
+            <td>5:00 PM</td>
+            <td class="course-cell">Thiết kế web</td>
+        </tr>
+        <tr>
+            <td class="time-cell"> Thứ 4</td>
+            <td>6:00 PM</td>
+            <td>8:00 PM</td>
+            <td class="course-cell">PHP</td>
+        </tr>
+        <tr>
+            <td class="time-cell">Thứ 5</td>
+            <td>2:00 PM</td>
+            <td>9:00 PM</td>
+            <td class="course-cell">JAVA CORE</td>
+        </tr>
+
+    </table>
+
+
+
+</body>
+
+</html>
