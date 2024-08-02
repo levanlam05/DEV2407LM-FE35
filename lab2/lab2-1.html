@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 01: Sử dụng table để tạo bảng danh sách</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .active {
+            color: green;
+        }
+        .action-btn {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bài 01: Sử dụng table để tạo bảng danh sách như sau</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Tên danh mục</th>
+                <th>Ngày sửa</th>
+                <th>Thứ tự</th>
+                <th>Trạng thái</th>
+                <th>Tác vụ</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>PHÒNG KHÁCH</td>
+                <td>7/8/2020</td>
+                <td>1</td>
+                <td class="active">Hoạt động</td>
+                <td>
+                    <button class="action-btn">Note</button>
+                    <button class="action-btn">Edit</button>
+                    <button class="action-btn">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>PHÒNG NGỦ</td>
+                <td>7/8/2020</td>
+                <td>2</td>
+                <td class="active">Hoạt động</td>
+                <td>
+                    <button class="action-btn">Note</button>
+                    <button class="action-btn">Edit</button>
+                    <button class="action-btn">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>PHÒNG BẾP</td>
+                <td>7/8/2020</td>
+                <td>3</td>
+                <td class="active">Hoạt động</td>
+                <td>
+                    <button class="action-btn">Note</button>
+                    <button class="action-btn">Edit</button>
+                    <button class="action-btn">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>PHÒNG TẮM</td>
+                <td>7/8/2020</td>
+                <td>4</td>
+                <td class="active">Hoạt động</td>
+                <td>
+                    <button class="action-btn">Note</button>
+                    <button class="action-btn">Edit</button>
+                    <button class="action-btn">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>TRẺ EM</td>
+                <td>7/8/2020</td>
+                <td>5</td>
+                <td class="active">Hoạt động</td>
+                <td>
+                    <button class="action-btn">Note</button>
+                    <button class="action-btn">Edit</button>
+                    <button class="action-btn">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>VĂN PHÒNG</td>
+                <td>7/8/2020</td>
+                <td>6</td>
+                <td class="active">Hoạt động</td>
+                <td>
+                    <button class="action-btn">Note</button>
+                    <button class="action-btn">Edit</button>
+                    <button class="action-btn">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>CẦU THANG</td>
+                <td>7/8/2020</td>
+                <td>7</td>
+                <td class="active">Hoạt động</td>
+                <td>
+                    <button class="action-btn">Note</button>
+                    <button class="action-btn">Edit</button>
+                    <button class="action-btn">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>TRANG TRÍ</td>
+                <td>7/8/2020</td>
+                <td>8</td>
+                <td class="active">Hoạt động</td>
+                <td>
+                    <button class="action-btn">Note</button>
+                    <button class="action-btn">Edit</button>
+                    <button class="action-btn">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p>Tổng số có: <b>8</b> danh mục</p>
+</body>
+</html>
