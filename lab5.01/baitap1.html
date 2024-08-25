@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+        .login-container {
+            width: 400px;
+            margin: 100px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            text-align: center;
+        }
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        label {
+            display: inline-block;
+            width: 100px;
+            text-align: right;
+            margin-right: 10px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 200px;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        .remember-set {
+            margin: 10px 0;
+        }
+        .remember-set label {
+            width: auto;
+            margin-left: 10px;
+            font-weight: normal;
+        }
+        input[type="submit"], input[type="reset"] {
+            padding: 5px 20px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login Information</h2>
+        <form id="loginForm" onsubmit="return validateForm()">
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div class="remember-set">
+                <input type="checkbox" id="remember" name="remember">
+                <label for="remember">Remember Set</label>
+            </div>
+            <div>
+                <input type="submit" value="Login">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+    
+    <script>
+        function validateForm() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            
+            if (username === "" || password === "") {
+                alert("Username and Password must be filled out");
+                return false;
+            }
+            
+            if (username.length < 5) {
+                alert("Username must be at least 5 characters long");
+                return false;
+            }
+            
+            if (password.length < 6) {
+                alert("Password must be at least 6 characters long");
+                return false;
+            }
+            
+            return true;
+        }
+    </script>
+</body>
+</html>
